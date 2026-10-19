@@ -2,7 +2,8 @@
 
 Author: **Jassiris Nunez** · **Developed for CPS*5745**.
 
-An interactive Streamlit/Plotly stock comparison dashboard with a white-and-navy institutional-research-inspired layout. Uses the latest available Yahoo Finance historical adjusted closing prices via yfinance. Data may be delayed.
+Built with Streamlit + Plotly + Yahoo Finance (`yfinance`). Inspired by the structure of the Kean Power BI dashboard: headline, shared filters, summary KPIs, and clearly arranged chart panels. 
+
 
 ## Visualizations
 
@@ -22,14 +23,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
-## Deploy on Render (free tier if available)
-
-1. Unzip this project and upload **the files inside** to your GitHub repository (not the ZIP).
-2. If this repository already exists, choose **Add file → Upload files**, replace the old `app.py`, and commit the changes. Include `requirements.txt` and `render.yaml` in the repository root.
-3. Visit https://dashboard.render.com/ and select **New → Blueprint** to deploy using `render.yaml`, or create a **Web Service** using the commands below.
-4. Blueprint uses the Render `free` plan, where available; some accounts may not have free instances. Render free services may sleep when idle.
-5. Verify the public `.onrender.com` URL works without logging in, and take screenshots of the five charts, filters, author name, and key findings.
 
 **Manual Render commands**
 
